@@ -10,3 +10,11 @@ app.use(express.urlencoded(
 
             })
 )
+const pool = new Pool({
+    user: 'postgres',
+    host: 'localhost',
+    database: 'mahasiswa',
+    password: '1234', //sesuaikan password masing-
+    port: 5432,
+})
+
